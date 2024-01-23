@@ -136,7 +136,7 @@ The calculator will effectively be running in an infinite loop outputting all me
 If all went to plan then congratulations you have successfully backed up the ROM from your TI-81 calculator!
 
 ## Source
-Source is included under the** \src\81\ **directory where:
+Source is included under the \src\81\ directory where:
 - romdump1.asm = ROM dump code for V1.0
 - romdump2.asm = ROM dump code for V1.1 - V1.8K
 - romdump3.asm = ROM dump code for V2.00 - V2.0V
