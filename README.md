@@ -74,7 +74,7 @@ Connect GPIO3(R10) to pin G4 of your ESP32 and GPIO2(R7) to pin G5. Additionally
 ### Preparing your ESP32
 
 - Connect your ESP32 to your PC and start up your Arduino IDE. It may be necessary to install drivers for your board for both your Operating System and for Arduino via the Boards Manager (under Tools->Board:).
-- Open **src\arduino\ROMDUMP81.ino** and Upload it to your ESP32.
+- Open **src\arduino\ROMDUMP81\ROMDUMP81.ino** and Upload it to your ESP32.
 - Open the Serial Monitor from Tools->Serial Monitor and ensure it is set to 115200 baud.
 - Press the physical RST button on your ESP32 (if it has one) to reset your board.
 - The Serial Monitor should read: "TI-81 ROM Dumper ready - awaiting calculator."
