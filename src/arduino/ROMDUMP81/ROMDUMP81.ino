@@ -31,7 +31,7 @@ void setup() {
   Serial.begin(115200);
   attachInterrupt(interruptPin, readBit, CHANGE);
   getDataFlag = true;
-  Serial.println("TI-81 ROM Dumper ready - awaiting calculator.");
+  Serial.println("TI-81 ROM Dumper ready - awaiting calculator.\n");
 }
 
 void loop() {
