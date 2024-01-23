@@ -154,8 +154,8 @@ Adrien Bertrand (Adriweb)
 Fred Desautels (mr womp womp)  
 Xavier Andreani (critor)  
 The creators of TilEm  
-Everyone at Cemetech  
-Everyone at TIPlanet  
+Everyone at [Cemetech](https://www.cemetech.net)  
+Everyone at [TIPlanet](https://www.tiplanet.org)  
 And anyone else I forgot (please remind me)
 
 ## License
