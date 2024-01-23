@@ -36,7 +36,7 @@ portWrite:
 
 DCDC:								; TI-81 ASM exploit entry point (mirrored equMem)
 	xor a							; a = $00
-	ld (portWrite + 1),a					; smc link port
+	ld (portWrite + 3),a					; smc link port
 	ld l,a
 	ld h,a							; hl = $0000 - ROM start address
 	ld e,a							; gets set to $08 during getByte
