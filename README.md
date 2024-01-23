@@ -105,7 +105,7 @@ Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
 Enter the below code into Prgm2 (Optionally name it LAUNCH if you wish):
 ![](/res/all_launch.png)
 
-**Note: This is the Unity 1.1 Launcher by FloppusMaximus. Code and license information can be found here: https://www.ticalc.org/archives/files/fileinfo/425/42572.html**
+**Note: This is the Unity 1.1 Launcher by FloppusMaximus. Code and license information can be found here: [Unity 1.1](https://www.ticalc.org/archives/files/fileinfo/425/42572.html)**
 
 ### Launching the ROM Dumper
 
@@ -141,7 +141,7 @@ Source is included under the \src\81\ directory where:
 - romdump2.asm = ROM dump code for V1.1 - V1.8K
 - romdump3.asm = ROM dump code for V2.00 - V2.0V
 
-I used FloppusMaximus' Unity 1.1 tools to assemble and to list the code instructions as HTML. The code may seem a little odd due to the fact that only valid tokens are possible since it needs to be typed in on-calc, so some weirdness or SMC is required.
+I used FloppusMaximus' [Unity 1.1](https://www.ticalc.org/archives/files/fileinfo/425/42572.html) tools to assemble and to list the code instructions as HTML. The code may seem a little odd due to the fact that only valid tokens are possible since it needs to be typed in on-calc, so some weirdness or SMC is required.
 
 ## BUGS!
 This was a very quick hack-job of a project so there is the potential for bugs. Please be careful and let me know if you find anything ...
