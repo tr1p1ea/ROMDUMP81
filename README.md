@@ -1,9 +1,5 @@
 # ROMDUMP81 - TI-81 ROM Preservation using an ESP32
 
-[TOCM]
-
-[TOC]
-
 ## Introduction
 
 The TI-81 was the first foray into graphing calculator by Texas Instruments all the way back in 1990. Though there are several revisions of the TI-81, they all have 1 thing in common; the lack of a link-port.
@@ -53,7 +49,7 @@ Follow the instructions specific to your ROM version:
 
 Carefully solder 2 wires to the below pins GPIO2 & GPIO3 of the ASIC. I recommend using small gauge wire and double checking for shorts with a multimeter afterwards. GPIO3 is 8 pins from the bottom left of the ASIC, likewise GPIO2 is 9 pins from the bottom left. It may be possible to utilise IC pin clips to avoid soldering if you have them. Pins assignments are shown for reference:
 
-[Image of V1.0 full] [Image of V1.0 asic]
+![](/res/V1.0_full.png) ![](/res/V1.0_asic.png)
 
 Connect GPIO3 to pin G4 of your ESP32 and GPIO2 to pin G5. Additionally connect your calculators + battery to the ESP32's 5V pin and your calculators - battery to your ESP32's GND pin.
 
@@ -61,7 +57,7 @@ Connect GPIO3 to pin G4 of your ESP32 and GPIO2 to pin G5. Additionally connect 
 
 Carefully solder 2 wires to the below pins GPIO2 & GPIO3 of the ASIC. I recommend using small gauge wire and double checking for shorts with a multimeter afterwards. GPIO3 is 8 pins from the bottom left of the ASIC, likewise GPIO2 is 9 pins from the bottom left. It may be possible to utilise IC pin clips to avoid soldering if you have them. Pins assignments are shown for reference:
 
-[Image of V1.1-V1.8K full] [Image of V1.1-V1.8K asic]
+![](/res/V1.1-V1.8K_full.png) ![](/res/V1.1-V1.8K_asic.png)
 
 Connect GPIO3 to pin G4 of your ESP32 and GPIO2 to pin G5. Additionally connect your calculators + battery to the ESP32's 5V pin and your calculators - battery to your ESP32's GND pin.
 
@@ -69,7 +65,7 @@ Connect GPIO3 to pin G4 of your ESP32 and GPIO2 to pin G5. Additionally connect 
 
 Carefully solder 2 wires to the below pads on the calculator mainboard labelled R10 & R7. It should be a lot easier than other versions due to the pads being easily accessible. Still if your prefer solderless GPIO3 is the 1st pin from the bottom right of the ASIC, likewise GPIO2 is the 2nd pin from the bottom right, so it may be possible to utilise IC pin clips to avoid soldering if you have them. Pins assignments are shown for reference:
 
-[Image of V2.00-V2.0V full] [Image of V2.00-V2.0V asic]
+![](/res/V2.00-V2.0V_full.png) ![](/res/V2.00-V2.0V_asic.png)
 
 Connect GPIO3(R10) to pin G4 of your ESP32 and GPIO2(R7) to pin G5. Additionally connect your calculators + battery to the ESP32's 5V pin and your calculators - battery to your ESP32's GND pin.
 
@@ -92,22 +88,22 @@ Follow the instructions specific to your ROM version:
 #### ROM Version V1.0
 
 Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
-[Image of V1.0 Prgm1]
+![](/res/V1.0_ROMDUMP.png)
 
 #### ROM Version V1.1 - V1.8K
 
 Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
-[Image of V1.1-V1.8K Prgm1]
+![](/res/V1.1-V1.8K_ROMDUMP.png)
 
 #### ROM Version V2.00 - V2.0V
 
 Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
-[Image of V2.00-V2.0V Prgm1]
+![](/res/V2.00-V2.0V_ROMDUMP.png)
 
 ### Preparing the ROM Dumper
 
 Enter the below code into Prgm2 (Optionally name it LAUNCH if you wish):
-[Image of Launch Prgm2]
+![](/res/all_launch.png)
 
 ### Launching the ROM Dumper
 
@@ -124,7 +120,7 @@ Once you've entered the programs above (and double-checked them to be sure they 
 9. Repeat steps 7 and 8 four more times. The fifth time you run Prgm2, rather than displaying a ?, it will launch the ROM Dumper.
 
 Once the ROM Dumper executes it will send data to the ESP32 which will be printed out in the Serial Monitor, this should take less than 15 seconds and should look similar to the following:
-[Image of ROM data in Serial Monitor]
+TODO: [Image of ROM data in Serial Monitor]
 
 If nothing happened or the Serial Monitor output looks corrupted I suggest:
 - Double checking your solder connections for shorts
