@@ -18,7 +18,7 @@ The issue with the OCR method (and the main reason for this project) is that due
 
 This project proposes taking advantage of the populatrity of cheap Arduino compatible microcontrollers such as the ESP32 (though you can likely use an actual Arduino, an ESP8266 or other similar board) and the GPIO pins on the TI-81 ASIC itself to transfer data over serial to your PC.
 
-By running an extremely simple ASM program and an equally simple Arduino program, I was able to dump the ROM's of my TI-81 in around 10 minutes - inclusive of disassembly, soldering, typing in the programs and running the code. The actual dumping of the ROM contents once the program is running takes less than 15 seconds.
+By running an extremely simple ASM program and an equally simple Arduino program, I was able to dump the ROM of my TI-81 in around 10 minutes - inclusive of disassembly, soldering, typing in the programs and running the code. The actual dumping of the ROM contents once the program is running takes less than 15 seconds.
 
 The biggest difficulty with this project is soldering wires to the ASIC pins for TI-81 ROM versions V1.0 - V1.8K. Some experience with soldering is definitely recommended and checking afterwards with a multimetere to ensure there are no shorts is a must. A magnifying glass or microscope would make life easier if you have one. I recommend soldering to the bottom of 1 pin and the top of the other as it seemed to be easier that way for me.
 
