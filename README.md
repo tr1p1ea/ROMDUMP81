@@ -11,7 +11,7 @@ Considering the age of the TI-81 it has become important to some in the communit
 All efforts in this space build off the great work by RANDY 'Zeroko' Compton who discovered an exploit that enabled execution of user-entered machine code on the TI-81. Additionally Benjamin 'FloppusMaximus' Moody built upon this by releasing Unity, an assembly program loader for the TI-81.
 
 There are 2 current methods for dumping your TI-81 ROM as far as I'm aware:
-- Printing characters to the LCD, capturing with a video camera and using OCR to decode the data (Developed by FloppusMaximus, instructions here: https://tiplanet.org/modules/archives/downloads/dump81.pdf)
+- Printing characters to the LCD, capturing with a video camera and using OCR to decode the data (Developed by FloppusMaximus, instructions here: [dump81.pdf](https://tiplanet.org/modules/archives/downloads/dump81.pdf))
 - Running an ASM program to generate a signal that can be picked up by an AM radio connected to your PC. (Developed by Zeroko, not publicly available?)
 
 The issue with the OCR method (and the main reason for this project) is that due to the age of the TI-81, the LCD's are starting to deteriorate and become unreliable with missing rows or columns. Plus it is EXTREMELY tedious and time-consuming. I don't believe at the time of writing that the AM Radio dumper is publicly available, though that would also be a very nifty and viable alternative to OCR.
