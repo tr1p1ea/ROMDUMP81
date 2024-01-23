@@ -119,7 +119,7 @@ Once you've entered the programs above (and double-checked them to be sure they 
 8. The calculator will display an error message. Press ENTER again ("Goto Error") which should take you to the equation editor. Press 2nd CLEAR to return to the home screen. (Note: if you accidentally press CLEAR before pressing 2nd, thus deleting the contents of Y1, then immediately turn the calculator off, and start over with step 1.)
 9. Repeat steps 7 and 8 four more times. The fifth time you run Prgm2, rather than displaying a ?, it will launch the ROM Dumper.
 
-Once the ROM Dumper executes it will send data to the ESP32 which will be printed out in the Serial Monitor, this should take less than 15 seconds and should look similar to the following:
+Once the ROM Dumper executes it will send data to the ESP32 which will be printed out in the Serial Monitor, this should take less than 15 seconds and should look similar to the following:  
 TODO: [Image of ROM data in Serial Monitor]
 
 If nothing happened or the Serial Monitor output looks corrupted I suggest:
@@ -136,15 +136,15 @@ This was a very quick hack-job of a project so there is the potential for bugs. 
 
 ## Thanks
 Special thanks goes to the amazing work by the pioneers of the 81 scene and those who helped me along the way:
--Randy 'Zeroko' Compton
--Benjamin 'FloppusMaximus' Moody
--Adrien 'Adriweb' Bertrand
--Fred 'mr womp womp' Desautels
--Xavier 'critor' Andreani
--The creators of TilEm
--Everyone at Cemetech
--Everyone at TIPlanet
--And anyone else I forgot (please remind me)
+Randy 'Zeroko' Compton  
+Benjamin 'FloppusMaximus' Moody  
+Adrien 'Adriweb' Bertrand  
+Fred 'mr womp womp' Desautels  
+Xavier 'critor' Andreani  
+The creators of TilEm  
+Everyone at Cemetech  
+Everyone at TIPlanet  
+And anyone else I forgot (please remind me)
 
 ## License
 This project is licensed under the The Unlicense, see LICENSE for more details.
