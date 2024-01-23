@@ -116,7 +116,7 @@ Once you've entered the programs above (and double-checked them to be sure they 
 3. Run Prgm1.
 4. Run Prgm2. It will run for a little while and then display a question mark (?). Press 2nd CLEAR to exit the program.
 5. Press Y= to open the equation editor. Press ENTER twice to move down to Y3.
-6. Type lots and lots of garbage into Y3, until the calculator won't let you type any more. It's important that the equations be completely full.
+6. Type lots and lots of garbage into Y3, until the calculator won't let you type any more. It's important that the equations be completely full. I usually just fill with zeroes.
 7. Return to the home screen and run Prgm2 again. This time, when it displays a ?, type Y1 (2nd VARS 1 ENTER.)
 8. The calculator will display an error message. Press ENTER again ("Goto Error") which should take you to the equation editor. Press 2nd CLEAR to return to the home screen. (Note: if you accidentally press CLEAR before pressing 2nd, thus deleting the contents of Y1, then immediately turn the calculator off, and start over with step 1.)
 9. Repeat steps 7 and 8 four more times. The fifth time you run Prgm2, rather than displaying a ?, it will launch the ROM Dumper.
@@ -126,7 +126,7 @@ TODO: [Image of ROM data in Serial Monitor]
 
 If nothing happened or the Serial Monitor output looks corrupted I suggest:
 - Double checking your solder connections for shorts
-- Unplugging yor ESp32 to power down your TI-81
+- Unplugging your ESP32 to power down your TI-81
 - Retyping in the Programs and trying again
 
 To generate a ROM binary simply copy the data from the Serial Monitor and paste into a text file, then assemble as a raw binary with your favourite assembler.
