@@ -1,10 +1,10 @@
-#ROMDUMP81 - TI-81 ROM Preservation using an ESP32
+# ROMDUMP81 - TI-81 ROM Preservation using an ESP32
 
 [TOCM]
 
 [TOC]
 
-##Introduction
+## Introduction
 
 The TI-81 was the first foray into graphing calculator by Texas Instruments all the way back in 1990. Though there are several revisions of the TI-81, they all have 1 thing in common; the lack of a link-port.
 
@@ -32,7 +32,7 @@ Although not necessary, I recommend powering your calc off the ESP32 +5v & GND p
 
 **IMPORTANT - The GPIO pins on the TI-81 are 5V and could damage your microcontroller if it is not 5V tolerant. There is a lot of conflicting information online regarding 5V tolerance on the ESP32 so a logic-level converter may be necessary.**
 
-##What you will need:
+## What you will need:
 - A working TI-81 Calculator
 - An ESP32 board (I used an ESP32-WROOM-32 board which cost less than $10 on ebay) + USB cable
 - A solder iron with solder (flux is also recommended)
@@ -41,7 +41,7 @@ Although not necessary, I recommend powering your calc off the ESP32 +5v & GND p
 - A multimeter
 - PC with Aruino IDE and drivers for your board installed
 
-##Hardware Instructions
+## Hardware Instructions
 
 To obtain the ROM version of your TI-81 press: [2nd] [MATH] [ALPHA] [S] and you will be presented with the self-test screen which displays your ROM version similar to the below:
 
@@ -49,7 +49,7 @@ To obtain the ROM version of your TI-81 press: [2nd] [MATH] [ALPHA] [S] and you 
 
 Follow the instructions specific to your ROM version:
 
-####ROM Version V1.0
+#### ROM Version V1.0
 
 Carefully solder 2 wires to the below pins GPIO2 & GPIO3 of the ASIC. I recommend using small gauge wire and double checking for shorts with a multimeter afterwards. GPIO3 is 8 pins from the bottom left of the ASIC, likewise GPIO2 is 9 pins from the bottom left. It may be possible to utilise IC pin clips to avoid soldering if you have them. Pins assignments are shown for reference:
 
@@ -57,7 +57,7 @@ Carefully solder 2 wires to the below pins GPIO2 & GPIO3 of the ASIC. I recommen
 
 Connect GPIO3 to pin G4 of your ESP32 and GPIO2 to pin G5. Additionally connect your calculators + battery to the ESP32's 5V pin and your calculators - battery to your ESP32's GND pin.
 
-####ROM Version V1.1 - V1.8K
+#### ROM Version V1.1 - V1.8K
 
 Carefully solder 2 wires to the below pins GPIO2 & GPIO3 of the ASIC. I recommend using small gauge wire and double checking for shorts with a multimeter afterwards. GPIO3 is 8 pins from the bottom left of the ASIC, likewise GPIO2 is 9 pins from the bottom left. It may be possible to utilise IC pin clips to avoid soldering if you have them. Pins assignments are shown for reference:
 
@@ -65,7 +65,7 @@ Carefully solder 2 wires to the below pins GPIO2 & GPIO3 of the ASIC. I recommen
 
 Connect GPIO3 to pin G4 of your ESP32 and GPIO2 to pin G5. Additionally connect your calculators + battery to the ESP32's 5V pin and your calculators - battery to your ESP32's GND pin.
 
-####ROM Version V2.00 - V2.0V
+#### ROM Version V2.00 - V2.0V
 
 Carefully solder 2 wires to the below pads on the calculator mainboard labelled R10 & R7. It should be a lot easier than other versions due to the pads being easily accessible. Still if your prefer solderless GPIO3 is the 1st pin from the bottom right of the ASIC, likewise GPIO2 is the 2nd pin from the bottom right, so it may be possible to utilise IC pin clips to avoid soldering if you have them. Pins assignments are shown for reference:
 
@@ -73,9 +73,9 @@ Carefully solder 2 wires to the below pads on the calculator mainboard labelled 
 
 Connect GPIO3(R10) to pin G4 of your ESP32 and GPIO2(R7) to pin G5. Additionally connect your calculators + battery to the ESP32's 5V pin and your calculators - battery to your ESP32's GND pin.
 
-##Software Instructions:
+## Software Instructions:
 
-###Preparing your ESP32
+### Preparing your ESP32
 
 Connect your ESP32 to your PC and start up your Arduino IDE. It may be necessary to install drivers for your board for both your Operating System and for Arduino via the Boards Manager (under Tools->Board:).
 Open ROMDUMP81.ino and Upload it to your ESP32.
@@ -85,31 +85,31 @@ The Serial Monitor should read: "TI-81 ROM Dumper ready - awaiting calculator."
 
 Keep the Serial Monitor open as this is where the ESP32 will write the ROM data to.
 
-###Preparing your TI-81
+### Preparing your TI-81
 
 Follow the instructions specific to your ROM version:
 
-####ROM Version V1.0
+#### ROM Version V1.0
 
 Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
 [Image of V1.0 Prgm1]
 
-####ROM Version V1.1 - V1.8K
+#### ROM Version V1.1 - V1.8K
 
 Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
 [Image of V1.1-V1.8K Prgm1]
 
-####ROM Version V2.00 - V2.0V
+#### ROM Version V2.00 - V2.0V
 
 Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
 [Image of V2.00-V2.0V Prgm1]
 
-###Preparing the ROM Dumper
+### Preparing the ROM Dumper
 
 Enter the below code into Prgm2 (Optionally name it LAUNCH if you wish):
 [Image of Launch Prgm2]
 
-###Launching the ROM Dumper
+### Launching the ROM Dumper
 
 Once you've entered the programs above (and double-checked them to be sure they are correct), do the following:
 
@@ -135,10 +135,10 @@ To generate a ROM binary simply copy the data from the Serial Monitor and paste 
 
 If all went to plan then congratulations you have successfully backed up the ROM from your TI-81 calculator!
 
-##BUGS!
+## BUGS!
 This was a very quick hack-job of a project so there is the potential for bugs. Please be careful and let me know if you find anything ...
 
-##Thanks
+## Thanks
 Special thanks goes to the amazing work by the pioneers of the 81 scene and those who helped me along the way:
 Randy 'Zeroko' Compton
 Benjamin 'FloppusMaximus' Moody
@@ -150,5 +150,5 @@ Everyone at Cemetech
 Everyone at TIPlanet
 And anyone else I forgot (please remind me)
 
-##License
+## License
 This project is licensed under the The Unlicense, see LICENSE for more details.
