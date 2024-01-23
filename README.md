@@ -74,7 +74,7 @@ Connect GPIO3(R10) to pin G4 of your ESP32 and GPIO2(R7) to pin G5. Additionally
 ### Preparing your ESP32
 
 - Connect your ESP32 to your PC and start up your Arduino IDE. It may be necessary to install drivers for your board for both your Operating System and for Arduino via the Boards Manager (under Tools->Board:).
-- Open *src\arduino\ROMDUMP81.ino* and Upload it to your ESP32.
+- Open **src\arduino\ROMDUMP81.ino** and Upload it to your ESP32.
 - Open the Serial Monitor from Tools->Serial Monitor and ensure it is set to 115200 baud.
 - Press the physical RST button on your ESP32 (if it has one) to reset your board.
 - The Serial Monitor should read: "TI-81 ROM Dumper ready - awaiting calculator."
@@ -104,6 +104,8 @@ Enter the below code into Prgm1 (Optionally name it ROMDUMP if you wish):
 
 Enter the below code into Prgm2 (Optionally name it LAUNCH if you wish):
 ![](/res/all_launch.png)
+
+**Note: This is the Unity 1.1 Launcher by FloppusMaximus. Code and license information can be found here: https://www.ticalc.org/archives/files/fileinfo/425/42572.html**
 
 ### Launching the ROM Dumper
 
