@@ -136,15 +136,15 @@ This was a very quick hack-job of a project so there is the potential for bugs. 
 
 ## Thanks
 Special thanks goes to the amazing work by the pioneers of the 81 scene and those who helped me along the way:
-Randy 'Zeroko' Compton
-Benjamin 'FloppusMaximus' Moody
-Adrien 'Adriweb' Bertrand
-Fred 'mr womp womp' Desautels
-Xavier 'critor' Andreani
-The creators of TilEm
-Everyone at Cemetech
-Everyone at TIPlanet
-And anyone else I forgot (please remind me)
+-Randy 'Zeroko' Compton
+-Benjamin 'FloppusMaximus' Moody
+-Adrien 'Adriweb' Bertrand
+-Fred 'mr womp womp' Desautels
+-Xavier 'critor' Andreani
+-The creators of TilEm
+-Everyone at Cemetech
+-Everyone at TIPlanet
+-And anyone else I forgot (please remind me)
 
 ## License
 This project is licensed under the The Unlicense, see LICENSE for more details.
